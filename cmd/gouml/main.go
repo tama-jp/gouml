@@ -10,7 +10,7 @@ import (
 	"github.com/go-kit/kit/log"
 	"github.com/go-kit/kit/log/level"
 	"github.com/kazukousen/gouml"
-	"github.com/urfave/cli"
+	"github.com/urfave/cli/v2"
 )
 
 func main() {
@@ -34,7 +34,7 @@ func main() {
 	app := cli.NewApp()
 	app.Version = "0.2"
 	app.Usage = "Automatically generate PlantUML from Go Code."
-	app.Commands = []cli.Command{
+	app.Commands = []*cli.Command{
 		{
 			Name:    "init",
 			Aliases: []string{"i"},

@@ -36,3 +36,10 @@ $ gouml i -f /path/to/package/ --ignore /path/to/package/ignorepackage/
 Copyright (c) 2019-present [Kazuki Nitta](https://github.com/kazukousen)
 
 Licensed under [MIT License](./LICENSE)
+
+
+
+git clone https://github.com/tama-jp/gouml.git
+cd gouml/cmd/gouml
+go build -o /usr/local/bin/gouml main.go
+gouml --version # now you can use this command!
